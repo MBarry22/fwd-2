@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
       rel="stylesheet"
@@ -25,13 +24,16 @@
             <fieldset>
               <legend><label class="nums">1</label>Account Info</legend>
               <label for="firstname">Name:</label>
-              <input type="text" name="username" id="usename" required placeholder="Full name..." pattern="^[a-zA-Z].*[\s\.]*$">
+              <input type="text" name="username" id="usename" required  pattern="^[a-zA-Z].*[\s\.]*$">
               <br>
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" required placeholder="Email Address...">
+              <input type="email" name="email" id="email" required >
+              <br>
               <br>
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required placeholder="Password... min 8 chars" pattern=".{8,}" >
+              <input type="password" name="password" id="password" required  pattern=".{8,}" >
+              <br>
+              <br>
             </fieldset>
           </div>
         <fieldset>
@@ -41,20 +43,12 @@
               <tr>  
                   <td><input type="checkbox" name="html" id="html" value="html"><label for="html">HTML</label></td>
                   <td><input type="checkbox" name="css" id="css" value="css"><label for="css">CSS</label></td>
-                  <td><input type="checkbox" name="sass" id="sass" value="sass"><label for="sass">Sass</label></td>
-              </tr>
-              <tr>  
                   <td><input type="checkbox" name="js" id="js" value="js"><label for="js">Javascript</label></td>
                   <td><input type="checkbox" name="php" id="php" value="php"><label for="php">PHP</label></td>
-                  <td><input type="checkbox" name="python" id="python" value="python"><label for="python">Python</label></td>
-              </tr>
-              <td><label class="standalone">Dev Ops</label></td>
-              <tr>  
-                  <td><input type="checkbox" name="git" id="git" value="git"><label for="git">GIT</label></td>
-                  <td><input type="checkbox" name="gulp" id="gulp" value="gulp"><label for="gulp">Gulp</label></td>
-                  <td><input type="checkbox" name="webpack" id="webpack" value="webpack"><label for="webpack">Webpack</label></td>
               </tr>
           </table>
+          <br>
+        
         </fieldset>
         <fieldset>
           <legend><label class="nums">3</label>Experience</legend>
@@ -66,6 +60,8 @@
           <label for="css">Intermediate</label>
           <input type="radio" name="advanced" id="advanced" value="advanced">
           <label for="js">Advanced</label>
+          <br>
+          <br>
         </fieldset>
         <fieldset>
           <legend><label class="nums">4</label>Other</legend>
@@ -90,7 +86,7 @@
             </optgroup>
             <br>
             <label for="other-text" style="display: none;" id="other-text-label">Details Please!</label>
-              <input type="text" name="other" id="other-text" style="display: none;" placeholder="Do tell..."/>
+              <input type="text" name="other" id="other-text" style="display: none;" placeholder="Do tell!"/>
           </select>
           <br>
           <label for="comments">Comments</label>

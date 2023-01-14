@@ -5,7 +5,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  background: linear-gradient(#ffbb3c, #fa4417);
+  background: linear-gradient(#4abdff, #ffffff);
   justify-content: center;
 }
 *, *:before, *:after {
@@ -15,7 +15,7 @@ html {
 
 main{
   font-size: 13px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Josefin Slab', serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +61,15 @@ fieldset {
 
   border-radius: 50%;
   padding: 2px 7px 2px 7px;
-  background-color: rgb(21, 51, 182);
+  background-color: rgb(40, 182, 21);
   color: white;
   font-size: small;
 }
-
+legend{
+  margin-bottom: 13px;
+  font-weight: bold;
+  font-size: 16px;
+}
 
 footer{
   position: relative;
@@ -86,36 +90,40 @@ footer{
   width: 100%;
   background-color: #e5e9ec;
   border: 3px solid;
-  border-color: #ffbb3c;
-  outline: #ffbb3c;
+  border-color: rgb(40, 182, 21);
+  outline: rgb(40, 182, 21);
   border-radius: 2px;
   height: 28px
 }
 
 input[type=submit]{
-  background-color: rgb(21, 51, 182);
+  background-color: rgb(53, 190, 76);
   color: white;
   border: none;
   width: 100%;
   height: 35px;
   border-radius: 5px;
   margin-bottom: 5px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 15px;
+  margin-top: 5px;
 }
 input[type=reset]{
   margin: 10px 0 0 0;
   background-color: white;
-  color: red;
+  color: black;
   font-weight: bold;
   border: 1px solid rgb(231, 231, 231);
   width: 100%;
   height: 35px;
   border-radius: 5px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 15px;
 }
 
 
 table{table-layout:fixed;width:100%;}
-
-tbody>tr>*:nth-last-child(3)~*{ width:33.3%}
+tbody>tr>*:nth-last-child(4)~*{ width:20%}
 
 
 
@@ -141,14 +149,15 @@ input[type=text]{
   background-color: #e5e9ec;
   border: none;
   border-radius: 2px;
-  height: 28px
+  height: 28px;
+  margin-bottom:10px;
 }
 input[type=text]:focus{
   width: 100%;
   background-color: #e5e9ec;
   border: 3px solid;
-  border-color: #ffbb3c;
-  outline: #ffbb3c;
+  border-color: rgb(40, 182, 21);
+  outline: rgb(40, 182, 21);
   border-radius: 2px;
   height: 28px
 }
@@ -157,7 +166,7 @@ input[type=text]:focus{
   width: 100%;
   background-color: #e5e9ec;
   border: 3px solid;
-  border-color: #ffbb3c;
-  outline: #ffbb3c;
+  border-color: rgb(40, 182, 21);
+  outline: rgb(40, 182, 21);
   border-radius: 2px;
 }
