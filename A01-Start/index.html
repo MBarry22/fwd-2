@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      
+    <section class="form-container">
+      <div class="form">
+        <h1>Sign Up</h1>
+        <form method="post" action="#">
+          <div class="account-info">
+            <fieldset>
+              <legend><label class="nums">1</label>Account Info</legend>
+              <label for="firstname">Name:</label>
+              <input type="text" name="username" id="usename" required placeholder="Full name..." pattern="[a-zA-Z]+">
+              <br>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required placeholder="Email Address...">
+              <br>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required placeholder="Password... min 8 chars" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
+            </fieldset>
+          </div>
+        <fieldset>
+          <legend><label class="nums">2</label>Dev Skills</legend>
+            <table class="dev-skills-table">
+              <tr><label class="standalone">Programming Languages</label></tr>
+              <tr>  
+                  <td><input type="checkbox" name="html" id="html" value="html"><label for="html">HTML</label></td>
+                  <td><input type="checkbox" name="css" id="css" value="css"><label for="css">CSS</label></td>
+                  <td><input type="checkbox" name="sass" id="sass" value="sass"><label for="sass">Sass</label></td>
+              </tr>
+              <tr>  
+                  <td><input type="checkbox" name="js" id="js" value="js"><label for="js">Javascript</label></td>
+                  <td><input type="checkbox" name="php" id="php" value="php"><label for="php">PHP</label></td>
+                  <td><input type="checkbox" name="python" id="python" value="python"><label for="python">Python</label></td>
+              </tr>
+              <td><label class="standalone">Dev Ops</label></td>
+              <tr>  
+                  <td><input type="checkbox" name="git" id="git" value="git"><label for="git">GIT</label></td>
+                  <td><input type="checkbox" name="gulp" id="gulp" value="gulp"><label for="gulp">Gulp</label></td>
+                  <td><input type="checkbox" name="webpack" id="webpack" value="webpack"><label for="webpack">Webpack</label></td>
+              </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend><label class="nums">3</label>Experience</legend>
+          <label class="standalone">Overall Experience</label>
+          <br>
+          <input type="radio" name="beginner" id="beginner" value="beginner">
+          <label for="html">Beginner</label>
+          <input type="radio" name="intermediate" id="intermediate" value="intermediate">
+          <label for="css">Intermediate</label>
+          <input type="radio" name="advanced" id="advanced" value="advanced">
+          <label for="js">Advanced</label>
+        </fieldset>
+        <fieldset>
+          <legend><label class="nums">4</label>Other</legend>
+          <label for="hearby">How did you hear about us?</label>
+          <br>
+          <select name="refferedby" id="refferedby">
+            <option value>Please Select..</option>
+            <optgroup label="Person">
+              <option value="Friend" id="Friend">Friend</option>
+              <option value="Family" id="Family">Family</option>
+              <option value="Colleague" id="Colleague">Colleague</option>
+            </optgroup>
+            <optgroup label="Media">
+              <option value="Internet" id="Internet">Internet</option>
+              <option value="Radio" id="Radio">Radio</option>
+              <option value="TV" id="TV">TV</option>
+              <option value="Newspaper" id="Newspaper">Newspaper</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="Magic" id="Magic">Magic!</option>
+              <option value="Other" id="">Other...</option>
+            </optgroup>
+            <br>
+            <label for="other-text" style="display: none;" id="other-text-label">Details Please!</label>
+              <input type="text" name="other" id="other-text" style="display: none;" placeholder="Do tell..."/>
+          </select>
+          <br>
+          <label for="comments">Comments</label>
+          <br>
+          <textarea name="comments" id="comments"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear Form">
+        </fieldset>
+        </form>
+        <footer>&copy; Mason Porter</footer>
+      </div>
+    </div>
+  </main>
+    <!--  
+
+*** Form should have a max-width of
+480px and should be centred along
+the left / right axis within the
+browser
+
+Form should post data to #
+
+Select Menu Values
+
+Person
+  Friend
+  Family
+  Colleague
+
+Media
+  Internet
+  Radio
+  TV
+  Newspaper
+Other
+  Magic!
+  Other...
+-->
+  </body>
+</html>
