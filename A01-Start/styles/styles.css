@@ -6,13 +6,13 @@ html {
   height: 100%;
   width: 100%;
   background: linear-gradient(#ffbb3c, #fa4417);
-  justify-content: center;
+  font-family: 'Roboto Slab', serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-
+/* Unsure if you were wanting this centered from the screenshot!*/
 main{
   font-size: 13px;
   font-family: 'Roboto Slab', serif;
@@ -20,9 +20,9 @@ main{
   justify-content: center;
   align-items: center;
   max-width: 100vh;
-  border: 3px black solid;
   width: 500px;
   height: 850px;
+  max-width: 450px;
 }
 
 .form-container{
@@ -46,7 +46,7 @@ h1{
   color: rgb(21, 51, 182);
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-shadow: gray 0.5px 0.5px;
+  text-shadow: black 0.8px 0.8px;
   margin-left: 5%;
 }
 fieldset {
@@ -54,7 +54,11 @@ fieldset {
   border-left: 0px;
   border-bottom: 0px;
   width: 100%;
+  font-size: small;
 
+}
+legend{
+  font-weight: bold;
 }
 .nums{
   margin: 0 3px 0 3px;
@@ -69,8 +73,8 @@ fieldset {
 
 footer{
   position: relative;
-  top: 30px;
-  left: 90%;
+  top: 6.2rem;
+  left: 75%;
 }
 
 
@@ -129,11 +133,19 @@ tbody>tr>*:nth-last-child(3)~*{ width:33.3%}
 }
 textarea{
   width: 100%;
-  height: 60px;
+  height: 80px;
   background-color: #e5e9ec;
   border: none;
   border-radius: 2px;
 
+}
+#comments:focus{
+  width: 100%;
+  background-color: #e5e9ec;
+  border: 3px solid;
+  border-color: #ffbb3c;
+  outline: #ffbb3c;
+  border-radius: 2px;
 }
 
 input[type=text]{
@@ -153,11 +165,3 @@ input[type=text]:focus{
   height: 28px
 }
 
-#comments:focus{
-  width: 100%;
-  background-color: #e5e9ec;
-  border: 3px solid;
-  border-color: #ffbb3c;
-  outline: #ffbb3c;
-  border-radius: 2px;
-}
